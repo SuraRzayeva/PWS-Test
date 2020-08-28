@@ -60,7 +60,7 @@ const App = () => {
           </Switch>
         </Router>
         <Credit />
-        <GlobalStyle menu={menu} />
+        <GlobalStyle menu={menu} home={home} />
       </DispatchContext.Provider>
     </Context.Provider>
   )

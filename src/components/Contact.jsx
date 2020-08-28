@@ -62,7 +62,7 @@ const Contact = () => {
     try {
       const response = await Axios({
         method: 'post',
-        url: 'https://8147737c1b6f.ngrok.io/api/hello',
+        url: 'https://suraapp.vercel.app/api/hello',
         data: {
           fullname: name,
           mail: email,

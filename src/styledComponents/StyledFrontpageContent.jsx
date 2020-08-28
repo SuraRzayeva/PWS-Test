@@ -13,7 +13,7 @@ position: absolute;
 top: 0;
 left: 0;
 transition: 0.5s ease all;
-overflow-x: hidden;
+overflow: hidden;
 
 .hero-content{
   width: 100%;
