@@ -7,8 +7,8 @@ export const StyledFrontpageContent = Styled.div`
   outline: none;
 }
 
-width: 100%;
-height: 100%;
+width: 100vw;
+height: 100vh;
 position: absolute;
 top: 0;
 left: 0;
@@ -102,17 +102,16 @@ overflow: hidden;
   .hero-content {
     .hero {
       .name {
-        font-size: 60px;
+        font-size: 48px;
       }
       .profession {
-        font-size: 18px;
+        font-size: 15px;
       }
 
       .buttons {
 
         .button {
-          height: 50px;
-          width: 170px;
+     
           font-size: 14px;
         }
   
@@ -122,38 +121,33 @@ overflow: hidden;
 }
 
 @media screen and (max-width: 420px) {
-
+  overflow: hidden;
 .hero-content {
-  justify-content: flex-start;
 
-  padding-left: 10%;
   .hero {
   
     .name {
-      font-size: 45px;
-      text-align: left;
+      font-size: 32px;
       line-height: 1;
       margin-bottom: 5px;
-      .mobile-break { display: block; }
 
     }
     .profession {
-      font-size: 15px;
-      text-align: left;
+      font-size: 14px;
+
       span {
         display: none;
       }
       .mobile-break { display: block; }
     }
     .buttons {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+
+
       .button {
-        height: 50px;
-        width: 180px;
+        height: 35px;
+        width: 120px;
         font-size: 12px;
-        margin: 8px 0 0 0;
+      
       }
 
     }

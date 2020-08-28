@@ -25,9 +25,7 @@ const FrontpageContent = callback => {
     <StyledFrontpageContent style={{ opacity: menu ? 0.2 : 1 }}>
       <div className="hero-content">
         <div className="hero">
-          <h1 className="name">
-            Sura <br className="mobile-break"></br>Rzayeva
-          </h1>
+          <h1 className="name">Sura Rzayeva</h1>
           <h3 className="profession">
             {' '}
             Frontend Developer <br className="mobile-break"></br>

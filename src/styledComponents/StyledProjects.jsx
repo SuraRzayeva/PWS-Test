@@ -14,7 +14,7 @@ overflow: hidden;
 transition: 0.5s ease all;
 
 .title {
-  margin-top: 50px;
+  margin-top: 100px;
   font-size: 20px;
   font-weight: 700;
   color: ${black};
@@ -23,7 +23,7 @@ transition: 0.5s ease all;
 
 @media screen and (max-width: 450px) {
   .title{
-    margin-top: 30px;
+    margin-top: 100px;
     font-size: 16px;
   }
 }

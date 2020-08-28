@@ -6,7 +6,7 @@ export const StyledProjectBox = Styled.div`
 width: 80%;
 background: ${bgColor};
 box-shadow: 18px 18px 30px ${shadow1}, -18px 18px 30px ${shadow2};
-margin: 30px;
+margin: 50px;
 display: flex;
 flex-direction: column;
 border-radius: 30px;

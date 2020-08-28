@@ -15,7 +15,7 @@ margin: auto;
 transition: 0.5s ease all;
 
 .title {
-    margin-top: 50px;
+  margin-top: 100px;
   font-size: 20px;
   font-weight: 700;
   color: ${black};
@@ -29,7 +29,7 @@ transition: 0.5s ease all;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  margin: 100px 0;
 
 
   .image {
@@ -67,7 +67,7 @@ transition: 0.5s ease all;
 @media screen and (max-width: 1100px) {
   .gallery {
     width: 95%;
-    margin: 30px 0;
+
   }
 }
 
@@ -75,13 +75,13 @@ transition: 0.5s ease all;
 @media screen and (max-width: 800px) {
   .gallery {
     width: 100%;
-    margin: 30px 0;
+    margin: 50px 0;
   }
 }
 
 @media screen and (max-width: 450px) {
   .title{
-    margin-top: 30px;
+    margin-top: 100px;
     font-size: 16px;
   }
 }

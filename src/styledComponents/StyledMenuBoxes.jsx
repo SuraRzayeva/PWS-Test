@@ -546,8 +546,8 @@ transition: 0.5s ease all;
 @media screen and (max-width: 420px) {
 
   .close-btn {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
 
   .boxes {
@@ -574,7 +574,7 @@ transition: 0.5s ease all;
       border-radius: 20px;
       a {
         h1 {
-          font-size: 11px;
+          font-size: 10px;
         }
       }
     }
