@@ -121,9 +121,9 @@ padding: 0;
 }
 
 @media screen and (max-width: 420px) {
-  overflow: hidden;
+ 
 .hero-content {
-
+  
   .hero {
   
     .name {

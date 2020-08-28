@@ -18,7 +18,7 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   user-select: none;
-
+  background: ${white};
 }
 
 `
