@@ -77,7 +77,7 @@ padding: 0;
 
 
       .contact-btn {
-
+        background: transparent;
         color: ${black};
         border: 2px solid ${black};
       }
