@@ -15,6 +15,7 @@ left: 0;
 z-index: ${props => (props.menu ? '100;' : '-100; ')}
 overflow: hidden;
 transition: 0.5s ease all;
+background: ${bgColor};
 
 .close-btn {
   position: absolute;
