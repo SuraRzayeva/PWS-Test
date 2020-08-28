@@ -14,10 +14,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-y: ${props => (props.home ? 'hidden;' : 'scroll;')}
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   user-select: none;
-background: red;
+
 }
 
 `
