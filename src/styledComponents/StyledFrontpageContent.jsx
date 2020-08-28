@@ -7,8 +7,8 @@ export const StyledFrontpageContent = Styled.div`
   outline: none;
 }
 
-width: 100vw;
-height: 100vh;
+width: 100%;
+height: 100%;
 transition: 0.5s ease all;
 overflow: hidden;
 margin: 0;
@@ -16,14 +16,15 @@ padding: 0;
 
 
 .hero-content{
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   transition: 0.5s ease all;
+
 
 .hero {
 

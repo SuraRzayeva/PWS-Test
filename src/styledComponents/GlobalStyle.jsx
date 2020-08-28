@@ -16,7 +16,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: ${bgColor};
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   user-select: none;
