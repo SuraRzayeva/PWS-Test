@@ -15,6 +15,7 @@ left: 0;
 transition: 0.5s ease all;
 overflow: hidden;
 
+
 .hero-content{
   width: 100%;
   height: 100%;
@@ -32,6 +33,7 @@ overflow: hidden;
       text-transform: uppercase;
       margin: 0;
       color: ${black};
+      .mobile-break { display: none; }
     }
 
     .profession {
@@ -122,23 +124,35 @@ overflow: hidden;
 @media screen and (max-width: 420px) {
 
 .hero-content {
+  justify-content: flex-start;
+padding-left: 10%;
   .hero {
+
     .name {
-      font-size: 40px;
+      font-size: 45px;
+      text-align: left;
+      line-height: 1;
+      margin-bottom: 5px;
+      .mobile-break { display: block; }
+
     }
     .profession {
-      font-size: 14px;
+      font-size: 15px;
+      text-align: left;
       span {
         display: none;
       }
       .mobile-break { display: block; }
     }
     .buttons {
-
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
       .button {
-        height: 35px;
-        width: 120px;
+        height: 50px;
+        width: 180px;
         font-size: 12px;
+        margin: 8px 0 0 0;
       }
 
     }

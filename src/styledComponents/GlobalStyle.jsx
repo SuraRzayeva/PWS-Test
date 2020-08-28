@@ -18,8 +18,10 @@ body {
   box-sizing: border-box;
   background: ${bgColor};
   overflow-x: hidden;
+  overflow-y: ${props => (props.home ? 'hidden;' : 'scroll;')}
   font-family: "Montserrat", sans-serif;
   user-select: none;
+
 }
 
 `
