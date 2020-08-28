@@ -9,11 +9,10 @@ export const StyledFrontpageContent = Styled.div`
 
 width: 100vw;
 height: 100vh;
-position: absolute;
-top: 0;
-left: 0;
 transition: 0.5s ease all;
 overflow: hidden;
+margin: 0;
+padding: 0;
 
 
 .hero-content{

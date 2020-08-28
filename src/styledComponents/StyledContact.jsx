@@ -227,6 +227,17 @@ background: ${detailColor};
       width: 85%;
     }
   }
+
+  .form-div {
+    .form {
+      form {
+        input, textarea {
+          border: 2px ${black} solid;
+          box-shadow: unset;
+        }
+      }
+    }
+  }
 }
 }
 
@@ -292,6 +303,7 @@ background: ${detailColor};
         form {
           input, textarea {
             border: 2px ${black} solid;
+            box-shadow: unset;
           }
         }
       }
