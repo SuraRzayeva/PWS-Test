@@ -14,6 +14,7 @@ import Projects from './components/Projects'
 import Context from './Context'
 import DispatchContext from './DispatchContext'
 import SinglePost from './components/SinglePost'
+import SocialMedia from './components/SocialMedia'
 import AppGallery from './components/AppGallery'
 import Illustrations from './components/Illustrations'
 
@@ -60,6 +61,7 @@ const App = () => {
           </Switch>
         </Router>
         <Credit />
+        {home ? <SocialMedia /> : null}
         <GlobalStyle menu={menu} home={home} />
       </DispatchContext.Provider>
     </Context.Provider>

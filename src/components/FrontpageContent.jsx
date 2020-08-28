@@ -42,7 +42,6 @@ const FrontpageContent = callback => {
           </div>
         </div>
       </div>
-      <SocialMedia />
     </StyledFrontpageContent>
   )
 }

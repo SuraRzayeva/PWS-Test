@@ -9,6 +9,7 @@ display: flex;
 transition: 0.5s ease all;
 align-items: flex-end;
 
+
 img {
   width: 20px;
   padding: 10px;
@@ -34,7 +35,7 @@ a:focus, a:active {
   transform: translateX(-50%);
 
   img {
-    width: 30px;
+    width: 20px;
   }
 }
 
@@ -43,7 +44,7 @@ a:focus, a:active {
   bottom: 6%;
   left: 50%;
   transform: translateX(-50%);
-  
+
   img {
     width: 20px;
   }
