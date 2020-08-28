@@ -18,6 +18,7 @@ opacity: ${props => (props.menu ? '0.2;' : '1;')}
 color: ${black};
 font-family: "Montserrat", sans-serif;
 transition: 0.5s ease all;
+overflow-x: hidden;
 
 .card {
   width: 70%;
@@ -286,6 +287,14 @@ background: ${detailColor};
       margin: auto;
       width: 90%;
       margin-top: 10px;
+
+      .form {
+        form {
+          input, textarea {
+            border: 2px ${black} solid;
+          }
+        }
+      }
      }
 
     }

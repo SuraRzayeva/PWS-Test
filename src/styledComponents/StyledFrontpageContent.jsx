@@ -125,9 +125,10 @@ overflow: hidden;
 
 .hero-content {
   justify-content: flex-start;
-padding-left: 10%;
-  .hero {
 
+  padding-left: 10%;
+  .hero {
+  
     .name {
       font-size: 45px;
       text-align: left;
