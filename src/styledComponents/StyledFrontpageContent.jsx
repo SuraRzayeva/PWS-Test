@@ -27,7 +27,11 @@ padding: 0;
 
 
 .hero {
+width: 100%;
+position: absolute;
+top: 50%;
 
+transform: translate(0, -50%);
     .name {
       font-size: 50px;
       text-transform: uppercase;
@@ -125,7 +129,7 @@ padding: 0;
 .hero-content {
   
   .hero {
-  
+  top: 45%;
     .name {
       font-size: 32px;
       line-height: 1;
@@ -167,7 +171,10 @@ padding: 0;
         font-size: 28px;
         line-height: 1;
         margin-bottom: 5px;
-  
+      }
+
+      .profession {
+        font-size: 10px;
       }
 
       .buttons {
