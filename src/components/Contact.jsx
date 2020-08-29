@@ -1,4 +1,5 @@
 import React, { useEffect, useContext, useState } from 'react'
+import emailjs from 'emailjs-com'
 import Context from '../Context'
 import Axios from 'axios'
 import DispatchContext from '../DispatchContext'
@@ -54,39 +55,52 @@ const Contact = () => {
       setError(true)
       setErrorText('Oh, sweetheart, please, fill all the input fields. ')
     } else {
-      sendInfo()
+      // sendInfo()
+      emailjs.sendForm('gmail', 'portfolio', e.target, 'user_h4Q1w3EOmf1x7pPQIXfud').then(
+        result => {
+          console.log(result.text)
+          setSuccess(true)
+          setName('')
+          setEmail('')
+          setMessage('')
+        },
+        error => {
+          setError(true)
+          setErrorText('Ups, something went wrong. Please, try again. ')
+        }
+      )
     }
   }
 
-  const sendInfo = async () => {
-    try {
-      const response = await Axios({
-        method: 'post',
-        url: 'https://suraapp.vercel.app/api/hello',
-        data: {
-          fullname: name,
-          mail: email,
-          input: message,
-          date: new Date()
-        },
-        headers: { 'Access-Control-Allow-Origin': '*' }
-      })
-      console.log(response.data)
-      if (response.data === 'Success') {
-        setSuccess(true)
-        setName('')
-        setEmail('')
-        setMessage('')
-      } else {
-        setError(true)
-        setErrorText('Ups, something went wrong. Please, try again. ')
-      }
-    } catch (e) {
-      console.log(e)
-      setError(true)
-      setErrorText('Ups, something went wrong. Please, try again. ')
-    }
-  }
+  // const sendInfo = async () => {
+  //   try {
+  //     const response = await Axios({
+  //       method: 'post',
+  //       url: 'https://suraapp.vercel.app/api/hello',
+  //       data: {
+  //         fullname: name,
+  //         mail: email,
+  //         input: message,
+  //         date: new Date()
+  //       },
+  //       headers: { 'Access-Control-Allow-Origin': '*' }
+  //     })
+  //     console.log(response.data)
+  //     if (response.data === 'Success') {
+  //       setSuccess(true)
+  //       setName('')
+  //       setEmail('')
+  //       setMessage('')
+  //     } else {
+  //       setError(true)
+  //       setErrorText('Ups, something went wrong. Please, try again. ')
+  //     }
+  //   } catch (e) {
+  //     console.log(e)
+  //     setError(true)
+  //     setErrorText('Ups, something went wrong. Please, try again. ')
+  //   }
+  // }
 
   return (
     <div style={{ visibility: loadedImages === 1 ? 'visible' : 'hidden' }}>
@@ -143,9 +157,9 @@ const Contact = () => {
               <div className="form">
                 <form onSubmit={submitForm} action="#" autoComplete="off">
                   {error ? <p className="flash-msg"> {errorText}</p> : null}
-                  <input autoComplete="name" type="text" placeholder="Name" onChange={e => setName(e.target.value)} value={name} />
-                  <input autoComplete="email" type="email" placeholder="Email" onChange={e => setEmail(e.target.value)} value={email} />
-                  <textarea autoComplete="off" name="" id="" cols="30" rows="10" placeholder="Your message" onChange={e => setMessage(e.target.value)} value={message}></textarea>
+                  <input autoComplete="name" type="text" placeholder="Name" name="name" onChange={e => setName(e.target.value)} value={name} />
+                  <input autoComplete="email" type="email" placeholder="Email" name="email" onChange={e => setEmail(e.target.value)} value={email} />
+                  <textarea autoComplete="off" name="" id="" cols="30" rows="10" placeholder="Your message" name="message" onChange={e => setMessage(e.target.value)} value={message}></textarea>
                   <button> SEND </button>
                 </form>
               </div>
