@@ -23,7 +23,7 @@ const SinglePost = () => {
   {
     if (param.id == 1)
       return (
-        <StyledSinglePost style={{ opacity: menu ? '0.2' : '1' }}>
+        <StyledSinglePost menu={menu} style={{ opacity: menu ? '0.2' : '1' }}>
           <div className="back">
             <Link to="/blog">
               <img src={Back} alt="" />

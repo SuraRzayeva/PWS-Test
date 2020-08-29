@@ -157,5 +157,28 @@ padding: 0;
 
 }
 
+@media screen and (max-width: 300px) {
+
+  .hero-content {
+  
+    .hero {
+    
+      .name {
+        font-size: 28px;
+        line-height: 1;
+        margin-bottom: 5px;
+  
+      }
+
+      .buttons {
+        flex-direction: column;
+
+        .button {
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
 
 `

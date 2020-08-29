@@ -15,7 +15,7 @@ left: 0;
 z-index: ${props => (props.menu ? '100;' : '-100; ')}
 overflow: hidden;
 transition: 0.5s ease all;
-background: ${bgColor};
+
 
 .close-btn {
   position: absolute;
@@ -29,11 +29,12 @@ background: ${bgColor};
   align-items: center;
   justify-content: center;
   transition: 0.5s ease all;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background: ${black};
   color: ${white};
-  border-radius: 50%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px ${shadow1};
 
  img {
     width: 50%; 
@@ -60,7 +61,8 @@ background: ${bgColor};
   .box {
     width: 180px;
     height: 180px;
-    background: ${bgColor};
+    background-color: ${bgColor};
+    background: linear-gradient(to right, ${bgColor}, #f5f9fc);
     box-shadow: 18px 18px 30px ${shadow1}, -18px 18px 30px ${shadow2};
     position: absolute;
     backface-visibility: hidden;
@@ -553,12 +555,12 @@ background: ${bgColor};
 
   .boxes {
     .box {
-      width: 130px;
-      height: 130px;
+      width: 120px;
+      height: 120px;
       border-radius: 20px;
       a {
         h1 {
-          font-size: 12px;
+          font-size: 10px;
         }
       }
     }
@@ -566,16 +568,16 @@ background: ${bgColor};
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 300px) {
 
   .boxes {
     .box {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       border-radius: 20px;
       a {
         h1 {
-          font-size: 10px;
+          font-size: 8px;
         }
       }
     }

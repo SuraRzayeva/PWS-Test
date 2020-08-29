@@ -13,21 +13,24 @@ overflow-x: hidden;
 transition: 0.5s ease all;
 
 .back {
+ opacity: ${props => (props.menu ? '0;' : '1;')}
   position: fixed;
   top: 12%;
-  left: 3%;
+  left: 3.4%;
   z-index: 100;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background: ${black};
   color: ${white};
-  border-radius: 50%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px ${shadow1};
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
   cursor: pointer;
   transition: 0.5s ease all;
+
   a {
     display: flex;
     justify-content: center;
@@ -135,9 +138,9 @@ transition: 0.5s ease all;
 
   .back {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 13%;
+    width: 27px;
+    height: 27px;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
   }

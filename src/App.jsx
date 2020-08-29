@@ -40,19 +40,19 @@ const App = () => {
             <Route path="/web" exact>
               <WebGallery />
             </Route>
-            <Route path="/app">
+            <Route path="/app" exact>
               <AppGallery />
             </Route>
-            <Route path="/illustrations">
+            <Route path="/illustrations" exact>
               <Illustrations />
             </Route>
             <Route path="/blog" exact>
               <Blog />
             </Route>
-            <Route path="/blog/:id">
+            <Route path="/blog/:id" exact>
               <SinglePost />
             </Route>
-            <Route path="/projects">
+            <Route path="/projects" exact>
               <Projects />
             </Route>
             <Route path="/contact" exact>

@@ -1,13 +1,14 @@
 import Styled from 'styled-components'
-import { black, white, detailColor } from './GlobalStyle'
+import { black, white, detailColor, shadow1 } from './GlobalStyle'
 
 export const StyledUp = Styled.div`
 
-width: 35px;
-height: 35px;
+width: 30px;
+height: 30px;
 background: ${black};
 color: ${white};
-border-radius: 50%;
+border-radius: 5px;
+box-shadow: 0 0 5px ${shadow1};
 display: flex;
 justify-content: center;
 margin-bottom: 20px;
@@ -22,10 +23,15 @@ img {
   background: ${detailColor};
 }
 
-@media (pointer:coarse) {
-  cursor: default;
+
+@media screen and (max-width: 430px) {
+width: 27px;
+height: 27px;
 }
 
 
+@media (pointer:coarse) {
+  cursor: default;
+}
 
 `
