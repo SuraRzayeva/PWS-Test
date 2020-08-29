@@ -11,6 +11,7 @@ const FrontpageContent = callback => {
 
   useEffect(() => {
     setHome(true)
+    window.scrollTo(0, 0)
   }, [])
 
   const openMenu = () => {
