@@ -47,6 +47,7 @@ const SinglePost = () => {
             </div>
             <div className="footer">
               <p> Published on September 12, 2019</p>
+              <p> Author: Sura Rzayeva</p>
             </div>
           </div>
           <Up />
@@ -91,6 +92,7 @@ const SinglePost = () => {
             </div>
             <div className="footer">
               <p> Published on December 10, 2019</p>
+              <p> Author: Sura Rzayeva</p>
             </div>
           </div>
           <Up />
@@ -142,6 +144,7 @@ const SinglePost = () => {
             </div>
             <div className="footer">
               <p> Published on February 27, 2020</p>
+              <p> Author: Sura Rzayeva</p>
             </div>
           </div>
           <Up />
@@ -150,6 +153,60 @@ const SinglePost = () => {
   }
 
   //------------------------------------------------------------------------------------------------ ARTICLE 4
+
+  {
+    if (param.id == 4)
+      return (
+        <StyledSinglePost style={{ opacity: menu ? '0.2' : '1' }}>
+          <div className="back">
+            <Link to="/blog">
+              <img src={Back} alt="" />
+            </Link>
+          </div>
+          <div className="post-card">
+            <div className="heading">
+              <div className="title">Time to free yourself. </div>
+            </div>
+            <div className="article">
+              <p>It’s time to wake up, sweetheart, you’re missing life.</p>
+              <p>Let’s play a game. We ask questions… and when it starts to hurt, we drink. I start. </p>
+              <p>Why do people think that ‘happiness’ is equal to ‘pleasure’? </p>
+              <p>‘Pleasure’ is a biological phenomenon. You feel good when certain hormonal processes happen in your physical body and they only serve to the goal of evolution. ‘Good feelings’ are not about being happy, it’s about survival, which helps you to stay alive and reproduce. Food helps you to survive, therefore eating something, especially when it’s high on calories and energy, feels good. Just think about that, what would happen to humanity, if we just eliminate the ‘orgasm detail’ from sex? …or just remove the hormones that make us attracted to the opposite sex? We would extinct. Nature has a simple method to keep us under control and it’s our ‘feelings’. How does it feel to be manipulated from inside? How does it feel to realize we are not that special at all?</p>
+              <p>Drink!</p>
+              <p>Let’s talk about happiness.</p>
+              <p>‘Happiness’, on the other hand, is a purely metaphysical concept that doesn’t even exist in the same ‘reality’. It arises from philosophical abstraction and has nothing to do with biological feelings. Correlation does not imply causation either. Don’t you agree? Ask parents who sacrificed their lives for their children, if they are happy or not. What do you think the answer will be? Ask soldiers who voluntarily died on the battlefield in order to protect their homelands. Ask scientists, warriors, heroes… even terrorists… who accepted death in order to reach ‘the truth’, ask them if they are happy. </p>
+              <p>Spoiler alert: They are happy.</p>
+              <p>You are happy, if you find meaning in your suffering… if you find meaning in life. </p>
+              <p>I understand the idea of relativity. I agree that ‘meaning’ is a relative concept… and there is no such thing as ‘the absolute meaning’… But, I don’t think that ‘happiness’ is relative. We are not that different from each other. When it comes to morality, we can make some true and false claims about human subjectivity. </p>
+              <p>You cannot find your maps in life without diving deep into darkness… without getting lost… without staring into the demonic eyes of the Unknown, ready to die… to lose… to risk. ‘Acceptance’ is a powerful attitude, but it will hurt. Life is suffering. Tragedies happen… people die, god is dead, nature doesn’t care about you… emptiness is the essence of the whole existence. What a life! Huh?</p>
+              <p>Drink.</p>
+              <p>Don’t be sad, you’re not alone. I feel you… we have a connection. I’m here. </p>
+              <p>It’s time to wake up, sweetheart. I need you to do something crazy.</p>
+              <p>This is the first day of the rest of your life. Do something uncomfortable… something risky. Do something that you have been avoiding for a long time. Get the hell out of your comfort zone! Do you want to change something? Change it now! Do you want to achieve something? Go for it. Do you need to cry? I’m here. No need to be ashamed of tears, for tears bear witness that a man has the greatest of courage, the courage to suffer.</p>
+              <p>‘Pick up your damn suffering, and bear it, and try to be a good person so you don't make it worse.’ said Jordan Peterson.</p>
+              <p>I promise you, it’s not that scary, there is nothing for you to lose… well, maybe some good feelings, but, you know what?</p>
+              <p>Fuck feelings.</p>
+              <p>They won’t help us to grow. They are not good for us in the long run. Don’t try to stop them either. You cannot stop feeling scared. But you can change how you react to those feelings. Observe them. Accept them. Ignore them.</p>
+              <p>Are you satisfied with your short term pleasures and fake safety? </p>
+              <p>How pathetic! Are you that mediocre? Are you that weak? </p>
+              <p>No. Don’t let the comforts of modern life mislead you. You’re tougher than you think. We are capable of facing hell and still survive. We have the magic inside, which feeds on our pain and becomes stronger. Life happens to us and we accept… we adapt. Trust me, we can adapt to anything… The problem with ‘sensitive people’ is that they’ve never been in any situation that would turn them into the monsters they’re capable of being. </p>
+              <p>Unleash your monsters. </p>
+              <p>Do something crazy… something scary. Don’t think about other people… nobody matters, nothing matters. Do something for your life, that you want to do. I guarantee you, it will hurt… but it will make you happy. </p>
+              <p>‘Those who have a 'why' to live, can bear with almost any 'how'’ – said Nietzsche. </p>
+              <p>It’s your job to find that ‘why’. You cannot find it by simply avoiding the uncomfortable… by rejecting the reality, by hiding behind your biological emotions, or playing the victim. Take responsibility for your own life. Stop the excuses. You’re living your masterpiece, only yours. You are in control of your decisions, no matter what happens. Conjure your own world, not only metaphorically but also literally and neurologically. </p>
+              <p>“Everything can be taken from a man but one thing: the last of the human freedoms—to choose one’s attitude in any given set of circumstances, to choose one’s own way.” said Viktor Frankl.</p>
+              <p>There is nothing for you to lose. Wake up! You are dying.</p>
+              <p>It’s your turn. Ask me your question. </p>
+            </div>
+            <div className="footer">
+              <p> Published on September 2, 2020</p>
+              <p> Author: Sura Rzayeva</p>
+            </div>
+          </div>
+          <Up />
+        </StyledSinglePost>
+      )
+  }
 }
 
 export default SinglePost

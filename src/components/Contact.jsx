@@ -72,36 +72,6 @@ const Contact = () => {
     }
   }
 
-  // const sendInfo = async () => {
-  //   try {
-  //     const response = await Axios({
-  //       method: 'post',
-  //       url: 'https://suraapp.vercel.app/api/hello',
-  //       data: {
-  //         fullname: name,
-  //         mail: email,
-  //         input: message,
-  //         date: new Date()
-  //       },
-  //       headers: { 'Access-Control-Allow-Origin': '*' }
-  //     })
-  //     console.log(response.data)
-  //     if (response.data === 'Success') {
-  //       setSuccess(true)
-  //       setName('')
-  //       setEmail('')
-  //       setMessage('')
-  //     } else {
-  //       setError(true)
-  //       setErrorText('Ups, something went wrong. Please, try again. ')
-  //     }
-  //   } catch (e) {
-  //     console.log(e)
-  //     setError(true)
-  //     setErrorText('Ups, something went wrong. Please, try again. ')
-  //   }
-  // }
-
   return (
     <div style={{ visibility: loadedImages === 1 ? 'visible' : 'hidden' }}>
       <StyledContact menu={menu} error={error} success={success}>

@@ -7,6 +7,7 @@ import DispatchContext from '../DispatchContext'
 import Blog1 from '../img/blog/post1.png'
 import Blog2 from '../img/blog/post2.png'
 import Blog3 from '../img/blog/post3.png'
+import Blog4 from '../img/blog/post4.png'
 
 const Blog = () => {
   const { menu, home, loading } = useContext(Context)
@@ -16,16 +17,22 @@ const Blog = () => {
   const [state, setState] = useState({
     articles: [
       {
-        id: 1,
-        title: 'They say I have sad eyes',
-        img: Blog1,
-        text: 'There is an immense curiosity growing inside me, I cannot stop. When I was a child, the questions were easier to answer. Or maybe I was just too naïve to be convinced with answers deeply rooted in our manmade fictional culture, which is considered an absolute reality… which is...'
+        id: 4,
+        title: 'Time to free yourself',
+        img: Blog4,
+        text: 'It’s time to wake up, sweetheart, you’re missing life. Let’s play a game. We ask questions… and when it starts to hurt, we drink. I start. Why do people think that ‘happiness’ is equal to ‘pleasure’?  ‘Pleasure’ is a biological phenomenon... '
       },
       {
         id: 2,
         img: Blog2,
         title: 'We are too loud.',
         text: '… can we just stop? No, we can’t. We are just a bunch of lost souls, hovering on life… silently, without shadows. Do you know that shadows can’t have shadows? I know your darkness. I can see you. Darkness is the only absolute reality we can rely on. So, relax… embrace it… and maybe, try to kind of… '
+      },
+      {
+        id: 1,
+        title: 'They say I have sad eyes',
+        img: Blog1,
+        text: 'There is an immense curiosity growing inside me, I cannot stop. When I was a child, the questions were easier to answer. Or maybe I was just too naïve to be convinced with answers deeply rooted in our manmade fictional culture, which is considered an absolute reality… which is...'
       },
       {
         id: 3,
@@ -46,14 +53,14 @@ const Blog = () => {
   }, [])
 
   useEffect(() => {
-    if (loadedImages === 3) {
+    if (loadedImages === 4) {
       console.log(loadedImages)
       setLoading(false)
     }
   }, [loadedImages])
 
   return (
-    <div style={{ visibility: loadedImages === 3 ? 'visible' : 'hidden' }}>
+    <div style={{ visibility: loadedImages === 4 ? 'visible' : 'hidden' }}>
       <StyledBlog style={{ opacity: menu ? '0.2' : '1' }}>
         <div className="title"> BLOG </div>
         <div className="blog-gallery">
