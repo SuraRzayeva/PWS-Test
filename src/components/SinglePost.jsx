@@ -169,7 +169,8 @@ const SinglePost = () => {
             </div>
             <div className="article">
               <p>It’s time to wake up, sweetheart, you’re missing life.</p>
-              <p>Let’s play a game. We ask questions… and when it starts to hurt, we drink. I start. </p>
+              <p>Let’s play a game. We ask questions… and when it starts to hurt, we drink. </p>
+              <p>I start.</p>
               <p>Why do people think that ‘happiness’ is equal to ‘pleasure’? </p>
               <p>‘Pleasure’ is a biological phenomenon. You feel good when certain hormonal processes happen in your physical body and they only serve to the goal of evolution. ‘Good feelings’ are not about being happy, it’s about survival, which helps you to stay alive and reproduce. Food helps you to survive, therefore eating something, especially when it’s high on calories and energy, feels good. Just think about that, what would happen to humanity, if we just eliminate the ‘orgasm detail’ from sex? …or just remove the hormones that make us attracted to the opposite sex? We would extinct. Nature has a simple method to keep us under control and it’s our ‘feelings’. How does it feel to be manipulated from inside? How does it feel to realize we are not that special at all?</p>
               <p>Drink!</p>
@@ -193,7 +194,7 @@ const SinglePost = () => {
               <p>Unleash your monsters. </p>
               <p>Do something crazy… something scary. Don’t think about other people… nobody matters, nothing matters. Do something for your life, that you want to do. I guarantee you, it will hurt… but it will make you happy. </p>
               <p>‘Those who have a 'why' to live, can bear with almost any 'how'’ – said Nietzsche. </p>
-              <p>It’s your job to find that ‘why’. You cannot find it by simply avoiding the uncomfortable… by rejecting the reality, by hiding behind your biological emotions, or playing the victim. Take responsibility for your own life. Stop the excuses. You’re living your masterpiece, only yours. You are in control of your decisions, no matter what happens. Conjure your own world, not only metaphorically but also literally and neurologically. </p>
+              <p>It’s your job to find that ‘why’. You cannot find it by simply avoiding the uncomfortable… by rejecting the reality, by hiding behind your biological emotions, or playing the victim. Take responsibility for your own life. Stop the excuses. You’re living your own masterpiece, only yours. You are in control of your decisions, no matter what happens. Conjure your own world, not only metaphorically but also literally and neurologically. </p>
               <p>“Everything can be taken from a man but one thing: the last of the human freedoms—to choose one’s attitude in any given set of circumstances, to choose one’s own way.” said Viktor Frankl.</p>
               <p>There is nothing for you to lose. Wake up! You are dying.</p>
               <p>It’s your turn. Ask me your question. </p>
