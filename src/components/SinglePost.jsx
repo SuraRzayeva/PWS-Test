@@ -184,7 +184,7 @@ const SinglePost = () => {
               <p>Don’t be sad, you’re not alone. I feel you… we have a connection. I’m here. </p>
               <p>It’s time to wake up, sweetheart. I need you to do something crazy.</p>
               <p>This is the first day of the rest of your life. Do something uncomfortable… something risky. Do something that you have been avoiding for a long time. Get the hell out of your comfort zone! Do you want to change something? Change it now! Do you want to achieve something? Go for it. Do you need to cry? I’m here. No need to be ashamed of tears, for tears bear witness that a man has the greatest of courage, the courage to suffer.</p>
-              <p>‘Pick up your damn suffering, and bear it, and try to be a good person so you don't make it worse.’ said Jordan Peterson.</p>
+              <p>‘Pick up your damn suffering, and bear it, and try to be a good person so you don't make it worse.’ — said Jordan Peterson.</p>
               <p>I promise you, it’s not that scary, there is nothing for you to lose… well, maybe some good feelings, but, you know what?</p>
               <p>Fuck feelings.</p>
               <p>They won’t help us to grow. They are not good for us in the long run. Don’t try to stop them either. You cannot stop feeling scared. But you can change how you react to those feelings. Observe them. Accept them. Ignore them.</p>
@@ -193,10 +193,11 @@ const SinglePost = () => {
               <p>No. Don’t let the comforts of modern life mislead you. You’re tougher than you think. We are capable of facing hell and still survive. We have the magic inside, which feeds on our pain and becomes stronger. Life happens to us and we accept… we adapt. Trust me, we can adapt to anything… The problem with ‘sensitive people’ is that they’ve never been in any situation that would turn them into the monsters they’re capable of being. </p>
               <p>Unleash your monsters. </p>
               <p>Do something crazy… something scary. Don’t think about other people… nobody matters, nothing matters. Do something for your life, that you want to do. I guarantee you, it will hurt… but it will make you happy. </p>
-              <p>‘Those who have a 'why' to live, can bear with almost any 'how'’ – said Nietzsche. </p>
+              <p>‘Those who have a 'why' to live, can bear with almost any 'how'’ — said Nietzsche. </p>
               <p>It’s your job to find that ‘why’. You cannot find it by simply avoiding the uncomfortable… by rejecting the reality, by hiding behind your biological emotions, or playing the victim. Take responsibility for your own life. Stop the excuses. You’re living your own masterpiece, only yours. You are in control of your decisions, no matter what happens. Conjure your own world, not only metaphorically but also literally and neurologically. </p>
-              <p>“Everything can be taken from a man but one thing: the last of the human freedoms—to choose one’s attitude in any given set of circumstances, to choose one’s own way.” said Viktor Frankl.</p>
+              <p>“Everything can be taken from a man but one thing: the last of the human freedoms — to choose one’s attitude in any given set of circumstances, to choose one’s own way.” said Viktor Frankl.</p>
               <p>There is nothing for you to lose. Wake up! You are dying.</p>
+              <p> Drink.</p>
               <p>It’s your turn. Ask me your question. </p>
             </div>
             <div className="footer">
