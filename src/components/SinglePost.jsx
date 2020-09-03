@@ -195,7 +195,7 @@ const SinglePost = () => {
               <p>Do something crazy… something scary. Don’t think about other people… nobody matters, nothing matters. Do something for your life, that you want to do. I guarantee you, it will hurt… but it will make you happy. </p>
               <p>‘Those who have a 'why' to live, can bear with almost any 'how'’ — said Nietzsche. </p>
               <p>It’s your job to find that ‘why’. You cannot find it by simply avoiding the uncomfortable… by rejecting the reality, by hiding behind your biological emotions, or playing the victim. Take responsibility for your own life. Stop the excuses. You’re living your own masterpiece, only yours. You are in control of your decisions, no matter what happens. Conjure your own world, not only metaphorically but also literally and neurologically. </p>
-              <p>“Everything can be taken from a man but one thing: the last of the human freedoms — to choose one’s attitude in any given set of circumstances, to choose one’s own way.” said Viktor Frankl.</p>
+              <p>“Everything can be taken from a man but one thing: the last of the human freedoms — to choose one’s attitude in any given set of circumstances, to choose one’s own way.” — said Viktor Frankl.</p>
               <p>There is nothing for you to lose. Wake up! You are dying.</p>
               <p> Drink.</p>
               <p>It’s your turn. Ask me your question. </p>
