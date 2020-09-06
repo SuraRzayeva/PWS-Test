@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet'
 import { StyledIllustrations } from '../styledComponents/StyledIllustrations'
 import DispatchContext from '../DispatchContext'
 import Context from '../Context'
@@ -42,6 +43,11 @@ const Illustrations = () => {
   return (
     <div style={{ visibility: loadedImages === number ? 'visible' : 'hidden' }}>
       <StyledIllustrations style={{ opacity: menu ? 0.1 : 1 }} state={menu}>
+        <Helmet>
+          <title>SR • Illustrations </title>
+          <meta name="description" content="Original and surreal illustrations made by me" />
+          <meta name="theme-color" content="#2B2B2D" />
+        </Helmet>
         <div className="title">ILLUSTRATIONS</div>
         <div className="gallery">
           <div className="image">

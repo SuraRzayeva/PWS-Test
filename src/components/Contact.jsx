@@ -1,4 +1,5 @@
 import React, { useEffect, useContext, useState } from 'react'
+import { Helmet } from 'react-helmet'
 import emailjs from 'emailjs-com'
 import Context from '../Context'
 import Axios from 'axios'
@@ -75,6 +76,11 @@ const Contact = () => {
   return (
     <div style={{ visibility: loadedImages === 1 ? 'visible' : 'hidden' }}>
       <StyledContact menu={menu} error={error} success={success}>
+        <Helmet>
+          <title>SR • About / Contact</title>
+          <meta name="description" content="About me and my contact information" />
+          <meta name="theme-color" content="#2B2B2D" />
+        </Helmet>
         <div className="card">
           <div className="about-div">
             <img src={Me} alt="" onLoad={countTimes} />

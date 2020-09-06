@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState, Fragment } from 'react'
+import { Helmet } from 'react-helmet'
 import { StyledWebGallery } from '../styledComponents/StyledWebGallery'
 import Up from './Up'
 import Loading from './Loading'
@@ -39,6 +40,11 @@ const WebGallery = () => {
   return (
     <div style={{ visibility: loadedImages === number ? 'visible' : 'hidden' }}>
       <StyledWebGallery style={{ opacity: menu ? 0.1 : 1 }} state={menu}>
+        <Helmet>
+          <title>SR • UI/UX Web </title>
+          <meta name="description" content="UI/UX web designs with modern design trends for e-commerce and portfolio webpages." />
+          <meta name="theme-color" content="#2B2B2D" />
+        </Helmet>
         <div className="title">UI/UX WEB</div>
         <div className="gallery">
           <div className="image">

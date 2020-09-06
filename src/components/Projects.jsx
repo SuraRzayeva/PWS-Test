@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 import { StyledProjects } from '../styledComponents/StyledProjects'
 import Up from './Up'
 import Context from '../Context'
@@ -92,6 +93,11 @@ const Projects = () => {
   return (
     <div style={{ visibility: loadedImages === number ? 'visible' : 'hidden' }}>
       <StyledProjects style={{ opacity: menu ? '0.2' : '1' }}>
+        <Helmet>
+          <title>SR • Projects</title>
+          <meta name="description" content="Real design and building projects i realized." />
+          <meta name="theme-color" content="#2B2B2D" />
+        </Helmet>
         <div className="title">PROJECTS</div>
         {project.projects.map(project => (
           <ProjectBox callback={countTimes} key={project.id} id={project.id} name={project.name} description={project.description} url={project.url} imageWeb={project.imgWeb} imageWeb2={project.imgWeb2} imageMob1={project.imgMob1} imageMob2={project.imgMob2} imageTab={project.imgTab} methods={project.methods} />

@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet'
 import Up from './Up'
 import Loading from './Loading'
 import { StyledAppGallery } from '../styledComponents/StyledAppGallery'
@@ -35,6 +36,11 @@ const AppGallery = () => {
   return (
     <div style={{ visibility: loadedImages === number ? 'visible' : 'hidden' }}>
       <StyledAppGallery style={{ opacity: menu ? 0.1 : 1 }} state={menu}>
+        <Helmet>
+          <title>SR • UI/UX App</title>
+          <meta name="description" content="UI/UX App Designs for IOS and Android" />
+          <meta name="theme-color" content="#2B2B2D" />
+        </Helmet>
         <div className="title">UI/UX APP</div>
         <div className="gallery">
           <div className="image">

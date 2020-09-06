@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet'
 import { Link, useParams } from 'react-router-dom'
 import { StyledSinglePost } from '../styledComponents/StyledSinglePost'
 import Context from '../Context'
@@ -24,6 +25,11 @@ const SinglePost = () => {
     if (param.id == 1)
       return (
         <StyledSinglePost menu={menu} style={{ opacity: menu ? '0.2' : '1' }}>
+          <Helmet>
+            <title>SR • Blog Post / They say I have sad eyes. </title>
+            <meta name="description" content="My blog post 'They say I have sad eyes' where i question existential problems." />
+            <meta name="theme-color" content="#2B2B2D" />
+          </Helmet>
           <div className="back">
             <Link to="/blog">
               <img src={Back} alt="" />
@@ -61,6 +67,11 @@ const SinglePost = () => {
     if (param.id == 3)
       return (
         <StyledSinglePost style={{ opacity: menu ? '0.2' : '1' }}>
+          <Helmet>
+            <title>SR • Blog Post / Morality </title>
+            <meta name="description" content="My blog post 'Morality' where i question moral issues in today's nihilistic postmodern society." />
+            <meta name="theme-color" content="#2B2B2D" />
+          </Helmet>
           <div className="back">
             <Link to="/blog">
               <img src={Back} alt="" />
@@ -106,6 +117,11 @@ const SinglePost = () => {
     if (param.id == 2)
       return (
         <StyledSinglePost style={{ opacity: menu ? '0.2' : '1' }}>
+          <Helmet>
+            <title>SR • Blog Post / We are too loud. </title>
+            <meta name="description" content="My blog post 'We are too loud' where i try to connect with people who had lost their touch with reality." />
+            <meta name="theme-color" content="#2B2B2D" />
+          </Helmet>
           <div className="back">
             <Link to="/blog">
               <img src={Back} alt="" />
@@ -158,6 +174,11 @@ const SinglePost = () => {
     if (param.id == 4)
       return (
         <StyledSinglePost style={{ opacity: menu ? '0.2' : '1' }}>
+          <Helmet>
+            <title>SR • Blog Post / Time to free yourself. </title>
+            <meta name="description" content="My blog post 'Time to free yourself' where i explain the differences between pleasure and happiness." />
+            <meta name="theme-color" content="#2B2B2D" />
+          </Helmet>
           <div className="back">
             <Link to="/blog">
               <img src={Back} alt="" />

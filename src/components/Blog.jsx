@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet'
 import { StyledBlog } from '../styledComponents/StyledBlog'
 import BlogPost from './BlogBox'
 import Up from './Up'
@@ -62,6 +63,11 @@ const Blog = () => {
   return (
     <div style={{ visibility: loadedImages === 4 ? 'visible' : 'hidden' }}>
       <StyledBlog style={{ opacity: menu ? '0.2' : '1' }}>
+        <Helmet>
+          <title>SR • Blog Posts</title>
+          <meta name="description" content="My blog posts about philosophy and science" />
+          <meta name="theme-color" content="#2B2B2D" />
+        </Helmet>
         <div className="title"> BLOG </div>
         <div className="blog-gallery">
           {state.articles.map(post => {

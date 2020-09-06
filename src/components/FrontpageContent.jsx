@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import { StyledFrontpageContent } from '../styledComponents/StyledFrontpageContent'
 import Context from '../Context'
@@ -24,6 +25,11 @@ const FrontpageContent = callback => {
 
   return (
     <StyledFrontpageContent style={{ opacity: menu ? 0.2 : 1 }}>
+      <Helmet>
+        <title>SR • Homepage</title>
+        <meta name="description" content="Frontend Developer and UI/UX Designer" />
+        <meta name="theme-color" content="#2B2B2D" />
+      </Helmet>
       <div className="hero-content">
         <div className="hero">
           <h1 className="name">Sura Rzayeva</h1>
