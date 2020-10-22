@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { StyledMenuBoxes } from '../styledComponents/StyledMenuBoxes'
-import Context from '../Context'
-import DispatchContext from '../DispatchContext'
-import Close from '../img/icons/close.svg'
+import { StyledMenuBoxes } from '../../styledComponents/StyledMenuBoxes'
+import Context from '../../context/Context'
+import DispatchContext from '../../context/DispatchContext'
+import Close from '../../img/icons/close.svg'
 
 const MenuBoxes = () => {
   const { menu, home } = useContext(Context)

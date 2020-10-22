@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { StyledBlogBox } from '../styledComponents/StyledBlogBox'
+import { StyledBlogBox } from '../../styledComponents/StyledBlogBox'
 
 const BlogBox = ({ callback, text, title, id, url }) => {
   return (

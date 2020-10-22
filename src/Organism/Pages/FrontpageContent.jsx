@@ -1,12 +1,11 @@
 import React, { useContext, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
-import { StyledFrontpageContent } from '../styledComponents/StyledFrontpageContent'
-import Context from '../Context'
-import DispatchContext from '../DispatchContext'
-import SocialMedia from './SocialMedia'
+import { StyledFrontpageContent } from '../../styledComponents/StyledFrontpageContent'
+import Context from '../../context/Context'
+import DispatchContext from '../../context/DispatchContext'
 
-const FrontpageContent = callback => {
+const FrontpageContent = (callback) => {
   const { menu, home } = useContext(Context)
   const { setMenu, setHome } = useContext(DispatchContext)
 
@@ -34,9 +33,8 @@ const FrontpageContent = callback => {
         <div className="hero">
           <h1 className="name">Sura Rzayeva</h1>
           <h3 className="profession">
-            {' '}
-            Frontend Developer <br className="mobile-break"></br>
-            <span>|</span> UI/UX Designer{' '}
+            Frontend Developer <br className="mobile-break" />
+            <span>|</span> UI/UX Designer
           </h3>
           <div className="buttons">
             <button onClick={openMenu} className="button portfolio-btn">

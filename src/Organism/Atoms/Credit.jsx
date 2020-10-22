@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import { StyledCredit } from '../styledComponents/StyledCredit'
-import Context from '../Context'
-import DispatchContext from '../DispatchContext'
+import { StyledCredit } from '../../styledComponents/StyledCredit'
+import Context from '../../context/Context'
+import DispatchContext from '../../context/DispatchContext'
 
 const Credit = () => {
   const { menu, home, loading } = useContext(Context)

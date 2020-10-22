@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import { StyledBurgerMenu } from '../styledComponents/StyledBurgerMenu'
-import Context from '../Context'
-import DispatchContext from '../DispatchContext'
+import { StyledBurgerMenu } from '../../styledComponents/StyledBurgerMenu'
+import Context from '../../context/Context'
+import DispatchContext from '../../context/DispatchContext'
 
 const BurgerMenu = () => {
   const { menu, home } = useContext(Context)

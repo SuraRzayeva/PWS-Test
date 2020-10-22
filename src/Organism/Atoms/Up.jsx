@@ -1,6 +1,6 @@
 import React from 'react'
-import { StyledUp } from '../styledComponents/StyledUp'
-import Arrow from '../img/icons/up.svg'
+import { StyledUp } from '../../styledComponents/StyledUp'
+import Arrow from '../../img/icons/up.svg'
 
 const Up = () => {
   const goUp = () => {

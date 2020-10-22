@@ -1,18 +1,17 @@
 import React, { useEffect, useContext, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import emailjs from 'emailjs-com'
-import Context from '../Context'
-import Axios from 'axios'
-import DispatchContext from '../DispatchContext'
-import { StyledContact } from '../styledComponents/StyledContact'
-import Me from '../img/profile.png'
-import twitter from '../img/icons/twitter.svg'
-import facebook from '../img/icons/facebook.svg'
-import behance from '../img/icons/behance.svg'
-import github from '../img/icons/github.svg'
-import dribbble from '../img/icons/dribbble.svg'
-import instagram from '../img/icons/instagram.svg'
-import linkedin from '../img/icons/linkedin.svg'
+import Context from '../../context/Context'
+import DispatchContext from '../../context/DispatchContext'
+import { StyledContact } from '../../styledComponents/StyledContact'
+import Me from '../../img/profile.png'
+import twitter from '../../img/icons/twitter.svg'
+import facebook from '../../img/icons/facebook.svg'
+import behance from '../../img/icons/behance.svg'
+import github from '../../img/icons/github.svg'
+import dribbble from '../../img/icons/dribbble.svg'
+import instagram from '../../img/icons/instagram.svg'
+import linkedin from '../../img/icons/linkedin.svg'
 
 const Contact = () => {
   const { menu, home, loading } = useContext(Context)
@@ -50,7 +49,7 @@ const Contact = () => {
     }, 2800)
   }, [success])
 
-  const submitForm = e => {
+  const submitForm = (e) => {
     e.preventDefault()
     if (!name || !email || !message) {
       setError(true)
@@ -58,14 +57,14 @@ const Contact = () => {
     } else {
       // sendInfo()
       emailjs.sendForm('gmail', 'portfolio', e.target, 'user_h4Q1w3EOmf1x7pPQIXfud').then(
-        result => {
+        (result) => {
           console.log(result.text)
           setSuccess(true)
           setName('')
           setEmail('')
           setMessage('')
         },
-        error => {
+        (error) => {
           setError(true)
           setErrorText('Ups, something went wrong. Please, try again. ')
         }
@@ -125,7 +124,11 @@ const Contact = () => {
           <div className="form-div">
             <div className="text">
               <p> Hey, thank you for visiting my website. </p>
-              <p> I'm an experienced UI/UX Designer &amp; Frontend Developer with a background in Graphic Design and degree in Marketing. I'm specializing on these three aspects, because in order to create an ideal product, you need to understand users, have an eye on design and know how to implement your ideas in code. </p>
+              <p>
+                {' '}
+                I'm an experienced UI/UX Designer &amp; Frontend Web/App Developer with a background in Graphic Design and degree in Marketing. I'm specializing on these three aspects, because in order to create an ideal product, you need to understand users, have an eye on design and know how to implement your ideas
+                in code.{' '}
+              </p>
               <p> Do you want to work together? </p>
               <p>Contact me: </p>
             </div>
@@ -133,9 +136,9 @@ const Contact = () => {
               <div className="form">
                 <form onSubmit={submitForm} action="#" autoComplete="off">
                   {error ? <p className="flash-msg"> {errorText}</p> : null}
-                  <input autoComplete="name" type="text" placeholder="Name" name="name" onChange={e => setName(e.target.value)} value={name} />
-                  <input autoComplete="email" type="email" placeholder="Email" name="email" onChange={e => setEmail(e.target.value)} value={email} />
-                  <textarea autoComplete="off" name="" id="" cols="30" rows="10" placeholder="Your message" name="message" onChange={e => setMessage(e.target.value)} value={message}></textarea>
+                  <input autoComplete="name" type="text" placeholder="Name" name="name" onChange={(e) => setName(e.target.value)} value={name} />
+                  <input autoComplete="email" type="email" placeholder="Email" name="email" onChange={(e) => setEmail(e.target.value)} value={email} />
+                  <textarea autoComplete="off" name="" id="" cols="30" rows="10" placeholder="Your message" name="message" onChange={(e) => setMessage(e.target.value)} value={message}></textarea>
                   <button> SEND </button>
                 </form>
               </div>
@@ -143,7 +146,7 @@ const Contact = () => {
             {success && (
               <div className="success">
                 {' '}
-                Thank you for your message! <br /> I will get back to you as soon as possible.{' '}
+                Thank you for your message! <br /> I will get back to you as soon as possible.
               </div>
             )}
           </div>

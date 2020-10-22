@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import { StyledLoading } from '../styledComponents/StyledLoading'
-import DispatchContext from '../DispatchContext'
-import Context from '../Context'
+import { StyledLoading } from '../../styledComponents/StyledLoading'
+import DispatchContext from '../../context/DispatchContext'
+import Context from '../../context/Context'
 
 const Loading = () => {
   const { menu, home, loading } = useContext(Context)

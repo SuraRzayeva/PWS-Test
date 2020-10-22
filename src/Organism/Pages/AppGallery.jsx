@@ -1,18 +1,18 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
-import Up from './Up'
-import Loading from './Loading'
-import { StyledAppGallery } from '../styledComponents/StyledAppGallery'
-import DispatchContext from '../DispatchContext'
-import Context from '../Context'
-import App1 from '../img/app/1.png'
-import App2 from '../img/app/2.png'
+import Up from '../Atoms/Up'
+import { StyledAppGallery } from '../../styledComponents/StyledAppGallery'
+import DispatchContext from '../../context/DispatchContext'
+import Context from '../../context/Context'
+import App1 from '../../img/app/1.png'
+import App2 from '../../img/app/2.png'
+import App3 from '../../img/app/3.png'
 
 const AppGallery = () => {
   const { menu, home, loading } = useContext(Context)
   const { setMenu, setHome, setLoading } = useContext(DispatchContext)
 
-  const images = [App1, App2]
+  const images = [App1, App2, App3]
   let number = images.length
 
   const [loadedImages, setLoadedImages] = useState(0)
@@ -47,7 +47,10 @@ const AppGallery = () => {
             <img src={App1} alt="" className="img-1" onLoad={countTimes} />
           </div>
           <div className="image">
-            <img src={App2} alt="" className="img-2" onLoad={countTimes} />
+            <img src={App3} alt="" className="img-2" onLoad={countTimes} />
+          </div>{' '}
+          <div className="image">
+            <img src={App2} alt="" className="img-3" onLoad={countTimes} />
           </div>
         </div>
         <Up />

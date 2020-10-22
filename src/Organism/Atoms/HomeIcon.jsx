@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import Home from '../img/icons/home.svg'
-import Context from '../Context'
-import DispatchContext from '../DispatchContext'
-import { StyledHomeIcon } from '../styledComponents/StyledHomeIcon'
+import Home from '../../img/icons/home.svg'
+import Context from '../../context/Context'
+import DispatchContext from '../../context/DispatchContext'
+import { StyledHomeIcon } from '../../styledComponents/StyledHomeIcon'
 
 const HomeIcon = () => {
   const { menu, home } = useContext(Context)

@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { StyledProjectBox } from '../styledComponents/StyledProjectBox'
+import { StyledProjectBox } from '../../styledComponents/StyledProjectBox'
 
 const ProjectBox = ({ callback, description, imageWeb, imageWeb2, imageMob1, imageMob2, imageTab, name, id, url, methods }) => {
   return (

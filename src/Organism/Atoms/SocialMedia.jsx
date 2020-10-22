@@ -1,12 +1,12 @@
 import React from 'react'
-import { StyledSocialMedia } from '../styledComponents/StyledSocialMedia'
-import twitter from '../img/icons/twitter.svg'
-import facebook from '../img/icons/facebook.svg'
-import behance from '../img/icons/behance.svg'
-import github from '../img/icons/github.svg'
-import dribbble from '../img/icons/dribbble.svg'
-import instagram from '../img/icons/instagram.svg'
-import linkedin from '../img/icons/linkedin.svg'
+import { StyledSocialMedia } from '../../styledComponents/StyledSocialMedia'
+import twitter from '../../img/icons/twitter.svg'
+import facebook from '../../img/icons/facebook.svg'
+import behance from '../../img/icons/behance.svg'
+import github from '../../img/icons/github.svg'
+import dribbble from '../../img/icons/dribbble.svg'
+import instagram from '../../img/icons/instagram.svg'
+import linkedin from '../../img/icons/linkedin.svg'
 
 const SocialMedia = () => {
   return (
