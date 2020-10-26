@@ -24,16 +24,21 @@ transition: 0.5s ease all;
 .gallery {
   width: 80%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 100px auto;
 
   .image {
     transition: .5s ease all;
-    width: 60%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     img {
-     width: 100%;
+     width: 90%;
       cursor: pointer;
       transition: .7s ease all;
       margin: 20px 0;
@@ -79,7 +84,11 @@ transition: 0.5s ease all;
 
   .gallery {
     .image {
-      width: 85%;
+      width: 90%;
+
+      img {
+        width: 90%;
+      }
     }
   }
 }

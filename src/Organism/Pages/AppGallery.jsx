@@ -5,7 +5,7 @@ import { StyledAppGallery } from '../../styledComponents/StyledAppGallery'
 import DispatchContext from '../../context/DispatchContext'
 import Context from '../../context/Context'
 import App1 from '../../img/app/1.png'
-import App2 from '../../img/app/2.png'
+import App2 from '../../img/app/4.png'
 import App3 from '../../img/app/3.png'
 
 const AppGallery = () => {
