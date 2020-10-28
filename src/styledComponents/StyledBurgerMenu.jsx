@@ -5,17 +5,19 @@ export const StyledBurgerMenu = Styled.div`
 *:active, *:focus {
   outline: none;
 }
-width: 40px;
-height: 25px;
 z-index: 100;
 position: absolute;
 top: 5%;
-right: 3%;
+right: 5%;
 display: flex;
 flex-direction: column;
 cursor: pointer;
 overflow: hidden;
 transition: 0.5s ease all;
+
+img {
+  width: 30px;
+}
 
 .line {
   width: 100%;
@@ -36,14 +38,6 @@ transition: 0.5s ease all;
 }
 
 
-@media screen and (max-width: 1200px) {
-  width: 40px;
-  height: 30px;
-
-  .line {
-    height: 6px;
-  }
-}
 
 
 @media screen and (min-width: 800px) {
@@ -55,7 +49,10 @@ transition: 0.5s ease all;
   position: absolute;
   right: 7%;
   top: 4%;
-  width: 38px;
+
+  img {
+    width: 24px;
+  }
 
 }
 

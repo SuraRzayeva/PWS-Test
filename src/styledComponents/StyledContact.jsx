@@ -14,7 +14,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 box-sizing: border-box;
-opacity: ${props => (props.menu ? '0.2;' : '1;')}
+opacity: ${(props) => (props.menu ? '0.2;' : '1;')}
 color: ${black};
 font-family: "Montserrat", sans-serif;
 transition: 0.5s ease all;
@@ -127,7 +127,7 @@ background: ${detailColor};
      
        .flash-msg {
           position: absolute;
-          color: ${props => (props.error ? dangerColor : 'green;')};
+          color: ${(props) => (props.error ? dangerColor : 'green;')};
           width: 100%;
           top: -8%;
           left: 50%;

@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { StyledBurgerMenu } from '../../styledComponents/StyledBurgerMenu'
 import Context from '../../context/Context'
 import DispatchContext from '../../context/DispatchContext'
+import dots from '../../img/icons/dots-menu.png'
 
 const BurgerMenu = () => {
   const { menu, home } = useContext(Context)
@@ -18,8 +19,9 @@ const BurgerMenu = () => {
 
   return (
     <StyledBurgerMenu onClick={openMenu}>
-      <div className="line line-1"></div>
-      <div className="line line-2"></div>
+      <img src={dots} alt="" />
+      {/* <div className="line line-1"></div>
+      <div className="line line-2"></div> */}
     </StyledBurgerMenu>
   )
 }

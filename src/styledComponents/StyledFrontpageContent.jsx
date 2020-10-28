@@ -59,8 +59,8 @@ transform: translate(0, -50%);
       .button {
         margin: 10px;
         border-style: none;
-        height: 35px;
-        width: 120px;
+        height: 40px;
+        width: 170px;
         text-transform: uppercase;
         font-size: 12px;
         font-weight: 600;
