@@ -11,13 +11,14 @@ import image4 from '../../img/web/4.jpg'
 import image5 from '../../img/web/5.jpg'
 import image6 from '../../img/web/6.jpg'
 import image7 from '../../img/web/7.jpg'
+import image8 from '../../img/web/8.png'
 
 const WebGallery = () => {
   const { menu, home, loading } = useContext(Context)
   const { setMenu, setHome, setLoading } = useContext(DispatchContext)
   const [loadedImages, setLoadedImages] = useState(0)
 
-  const images = [image1, image2, image3, image4, image5, image6, image7]
+  const images = [image1, image2, image3, image4, image5, image6, image7, image8]
   let number = images.length
 
   const countTimes = () => {
@@ -51,6 +52,9 @@ const WebGallery = () => {
           </div>
           <div className="image">
             <img src={image2} alt="" className="img-2" onLoad={countTimes} />
+          </div>
+          <div className="image">
+            <img src={image8} alt="" className="img-2" onLoad={countTimes} />
           </div>
           <div className="image">
             <img src={image3} alt="" className="img-3" onLoad={countTimes} />
