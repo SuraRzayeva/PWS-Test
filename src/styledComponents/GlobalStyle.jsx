@@ -4,7 +4,7 @@ export const shadow1 = '#D1D9E6'
 export const shadow2 = '#FFFFFF'
 export const black = '#2B2B2D'
 export const white = '#ECF0F3'
-export const detailColor = '#c4499d'
+export const detailColor = '#0e6ab5'
 export const dangerColor = '#db2a50'
 
 export const GlobalStyle = createGlobalStyle`
