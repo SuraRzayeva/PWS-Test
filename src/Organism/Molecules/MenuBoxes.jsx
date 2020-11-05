@@ -23,7 +23,7 @@ const MenuBoxes = () => {
     <StyledMenuBoxes menu={menu}>
       {menu ? (
         <div onClick={closeMenu} className="close-btn">
-          <img src={Close} alt="" />
+          <p>X</p>
         </div>
       ) : null}
       <div className="boxes">

@@ -12,7 +12,7 @@ width: 100%;
 height: 100%;
 top: 0;
 left: 0;
-z-index: ${props => (props.menu ? '100;' : '-100; ')}
+z-index: ${(props) => (props.menu ? '100;' : '-100; ')}
 overflow: hidden;
 transition: 0.5s ease all;
 
@@ -23,7 +23,7 @@ transition: 0.5s ease all;
   left: 50%;
   transform: translateX(-50%);
   font-weight: 900;
-  z-index: ${props => (props.menu ? '110;' : '-100; ')}
+  z-index: ${(props) => (props.menu ? '110;' : '-100; ')}
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -31,13 +31,15 @@ transition: 0.5s ease all;
   transition: 0.5s ease all;
   width: 30px;
   height: 30px;
-  background: ${black};
-  color: ${white};
-  border-radius: 5px;
+  background: ${white};
+  color: ${black};
+  border-radius: 50%;
+
+
   box-shadow: 0 0 5px ${shadow1};
 
- img {
-    width: 50%; 
+p {
+    font-weight: 500;
   }
 }
 
@@ -55,8 +57,8 @@ transition: 0.5s ease all;
   height: 100%;
   position: relative;
   transition: .5s ease all;
-  pointer-events: ${props => (props.menu ? 'auto;' : 'none')}
-  z-index: ${props => (props.menu ? '100;' : '-100; ')}
+  pointer-events: ${(props) => (props.menu ? 'auto;' : 'none')}
+  z-index: ${(props) => (props.menu ? '100;' : '-100; ')}
 
   .box {
     width: 180px;
@@ -96,17 +98,17 @@ transition: 0.5s ease all;
   .box-1 {
     top: 5%;
     left: 60%;
-    animation: ${props => (props.menu ? 'box1ToCenter .5s ease forwards;' : 'box1Back .5s ease forwards; ')}
-    z-index: ${props => (props.menu ? '100;' : '-100; ')}
-    cursor: ${props => (props.menu ? 'pointer;' : null)}
+    animation: ${(props) => (props.menu ? 'box1ToCenter .5s ease forwards;' : 'box1Back .5s ease forwards; ')}
+    z-index: ${(props) => (props.menu ? '100;' : '-100; ')}
+    cursor: ${(props) => (props.menu ? 'pointer;' : null)}
   }
 
   .box-2 {
     top: 15%;
     left: 20%;
-    animation: ${props => (props.menu ? 'box2ToCenter .5s ease forwards;' : 'box2Back .5s ease forwards; ')}
-    z-index: ${props => (props.menu ? '100;' : '-100; ')}
-    cursor: ${props => (props.menu ? 'pointer;' : null)}
+    animation: ${(props) => (props.menu ? 'box2ToCenter .5s ease forwards;' : 'box2Back .5s ease forwards; ')}
+    z-index: ${(props) => (props.menu ? '100;' : '-100; ')}
+    cursor: ${(props) => (props.menu ? 'pointer;' : null)}
   }
 
 
@@ -114,9 +116,9 @@ transition: 0.5s ease all;
   .box-3 {
     top: 70%;
     left: 50%;
-    animation: ${props => (props.menu ? 'box3ToCenter .5s ease forwards;' : 'box3Back .5s ease forwards; ')}
-    z-index: ${props => (props.menu ? '100;' : '-100; ')}
-    cursor: ${props => (props.menu ? 'pointer;' : null)}
+    animation: ${(props) => (props.menu ? 'box3ToCenter .5s ease forwards;' : 'box3Back .5s ease forwards; ')}
+    z-index: ${(props) => (props.menu ? '100;' : '-100; ')}
+    cursor: ${(props) => (props.menu ? 'pointer;' : null)}
  
   }
 
@@ -124,26 +126,26 @@ transition: 0.5s ease all;
     top: 50%;
     left: 80%;
 
-    animation: ${props => (props.menu ? 'box5ToCenter .5s ease forwards;' : 'box5Back .5s ease forwards; ')}
-    z-index: ${props => (props.menu ? '100;' : '-100; ')}
-    cursor: ${props => (props.menu ? 'pointer;' : null)}
+    animation: ${(props) => (props.menu ? 'box5ToCenter .5s ease forwards;' : 'box5Back .5s ease forwards; ')}
+    z-index: ${(props) => (props.menu ? '100;' : '-100; ')}
+    cursor: ${(props) => (props.menu ? 'pointer;' : null)}
 
   }
 
   .box-5 {
     left: 92%;
     top: -5%;
-    animation: ${props => (props.menu ? 'box6ToCenter .5s ease forwards;' : 'box6Back .5s ease forwards; ')}
-    z-index: ${props => (props.menu ? '100;' : '-100; ')}
-    cursor: ${props => (props.menu ? 'pointer;' : null)}
+    animation: ${(props) => (props.menu ? 'box6ToCenter .5s ease forwards;' : 'box6Back .5s ease forwards; ')}
+    z-index: ${(props) => (props.menu ? '100;' : '-100; ')}
+    cursor: ${(props) => (props.menu ? 'pointer;' : null)}
   }
 
   .box-6 {
     top: 65%;
     left: 7%;
-    animation: ${props => (props.menu ? 'box4ToCenter .5s ease forwards;' : 'box4Back .5s ease forwards; ')}
-    z-index: ${props => (props.menu ? '100;' : '-100; ')}
-    cursor: ${props => (props.menu ? 'pointer;' : null)}
+    animation: ${(props) => (props.menu ? 'box4ToCenter .5s ease forwards;' : 'box4Back .5s ease forwards; ')}
+    z-index: ${(props) => (props.menu ? '100;' : '-100; ')}
+    cursor: ${(props) => (props.menu ? 'pointer;' : null)}
   }
 
 
@@ -152,7 +154,7 @@ transition: 0.5s ease all;
   left: -5%;
   z-index: -100;
   transition: .5s all ease;
-  opacity: ${props => (props.menu ? '0;' : '1;')}
+  opacity: ${(props) => (props.menu ? '0;' : '1;')}
 }
 }
 
@@ -502,20 +504,20 @@ transition: 0.5s ease all;
     .box-1 {
       top: 70%;
       left: 60%;
-      animation: ${props => (props.menu ? 'box1ToCenterM .5s ease forwards;' : 'box1BackM .5s ease forwards; ')}
+      animation: ${(props) => (props.menu ? 'box1ToCenterM .5s ease forwards;' : 'box1BackM .5s ease forwards; ')}
 
     }
 
     .box-2 {
       top: 65%;
       left: 10%;
-      animation: ${props => (props.menu ? 'box2ToCenterM .5s ease forwards;' : 'box2BackM .5s ease forwards; ')}
+      animation: ${(props) => (props.menu ? 'box2ToCenterM .5s ease forwards;' : 'box2BackM .5s ease forwards; ')}
     }
 
     .box-3 {
       top: 20%;
       left: 80%;
-      animation: ${props => (props.menu ? 'box3ToCenterM .5s ease forwards;' : 'box3BackM .5s ease forwards; ')}
+      animation: ${(props) => (props.menu ? 'box3ToCenterM .5s ease forwards;' : 'box3BackM .5s ease forwards; ')}
    
     }
 
@@ -523,19 +525,19 @@ transition: 0.5s ease all;
       top: 90%;
       left: 30%;
 
-      animation: ${props => (props.menu ? 'box5ToCenterM .5s ease forwards;' : 'box5BackM .5s ease forwards; ')}
+      animation: ${(props) => (props.menu ? 'box5ToCenterM .5s ease forwards;' : 'box5BackM .5s ease forwards; ')}
     }
 
     .box-5 {
       top: -5%;
       left: 45%;
-      animation: ${props => (props.menu ? 'box6ToCenterM .5s ease forwards;' : 'box6BackM .5s ease forwards; ')}
+      animation: ${(props) => (props.menu ? 'box6ToCenterM .5s ease forwards;' : 'box6BackM .5s ease forwards; ')}
     }
 
     .box-6 {
       top: 15%;
       left: 3%;
-      animation: ${props => (props.menu ? 'box4ToCenterM .5s ease forwards;' : 'box4BackM .5s ease forwards; ')}
+      animation: ${(props) => (props.menu ? 'box4ToCenterM .5s ease forwards;' : 'box4BackM .5s ease forwards; ')}
     }
 
     .box-7 {
@@ -555,12 +557,12 @@ transition: 0.5s ease all;
 
   .boxes {
     .box {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       border-radius: 20px;
       a {
         h1 {
-          font-size: 10px;
+          font-size: 9px;
         }
       }
     }

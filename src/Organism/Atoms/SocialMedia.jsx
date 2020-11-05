@@ -20,17 +20,8 @@ const SocialMedia = () => {
       <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/surarzayeva/">
         <img src={linkedin} alt="linkedin" />
       </a>
-      <a target="_blank" rel="noopener noreferrer" href="https://dribbble.com/SuraRzayeva">
-        <img src={dribbble} alt="dribbble" />
-      </a>
-      <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/surarzayeva">
-        <img src={behance} alt="behance" />
-      </a>
       <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/surarzayeva/">
         <img src={instagram} alt="instagram" />
-      </a>
-      <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sura.rzv">
-        <img src={facebook} alt="facebook" />
       </a>
     </StyledSocialMedia>
   )
