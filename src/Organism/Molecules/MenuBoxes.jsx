@@ -20,17 +20,14 @@ const MenuBoxes = () => {
   }
 
   return (
-    <StyledMenuBoxes menu={menu}>
-      {menu ? (
-        <div onClick={closeMenu} className="close-btn">
-          <p>X</p>
-        </div>
-      ) : null}
+    <StyledMenuBoxes menu={menu} onClick={closeMenu}>
       <div className="boxes">
         <div className="box box-1">
           {menu ? (
             <Link onClick={closeMenu} to="/web">
-              <h1> UI/UX WEB </h1>{' '}
+              <div className="wrapper">
+                <h1> UI/UX WEB </h1>
+              </div>
             </Link>
           ) : null}
         </div>
@@ -73,8 +70,6 @@ const MenuBoxes = () => {
             </Link>
           ) : null}
         </div>
-
-        <div className="box box-7"></div>
       </div>
     </StyledMenuBoxes>
   )

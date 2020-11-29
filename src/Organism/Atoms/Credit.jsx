@@ -11,7 +11,6 @@ const Credit = () => {
   return (
     <StyledCredit style={{ visibility: loading ? 'hidden' : 'visible' }} home={home} menu={menu}>
       <p>
-        {' '}
         &copy; SURA RZAYEVA | <span>{today}</span>
       </p>
     </StyledCredit>

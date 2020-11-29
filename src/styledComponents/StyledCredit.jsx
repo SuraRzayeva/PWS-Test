@@ -5,15 +5,15 @@ export const StyledCredit = Styled.div`
 
 
 
-position: ${props => (props.home ? 'absolute;' : null)};
+position: ${(props) => (props.home ? 'absolute;' : null)};
 bottom: 3%;
-left: 5%;
+left: 100px;
 display: flex;
 align-items: center;
 justify-content: center;
 overflow-x: hidden;
 transition: 0.5s ease all;
-opacity: ${props => (props.menu ? '0.2;' : '1;')}
+opacity: ${(props) => (props.menu ? '0.2;' : '1;')}
 
 p {
   font-size: 12px;
@@ -25,7 +25,7 @@ p {
 @media screen and (max-width: 1030px) {
   bottom: 2%;
   left: 50%;
-  transform: ${props => (props.home ? 'translateX(-50%);' : null)}
+  transform: ${(props) => (props.home ? 'translateX(-50%);' : null)}
 }
 
 

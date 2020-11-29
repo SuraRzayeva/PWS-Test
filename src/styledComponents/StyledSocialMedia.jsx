@@ -11,7 +11,7 @@ align-items: flex-end;
 
 
 img {
-  width: 20px;
+  width: 15px;
   padding: 10px;
   transition: .3s ease all;
   cursor: pointer;

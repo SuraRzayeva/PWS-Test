@@ -60,6 +60,7 @@ p {
   pointer-events: ${(props) => (props.menu ? 'auto;' : 'none')}
   z-index: ${(props) => (props.menu ? '100;' : '-100; ')}
 
+
   .box {
     width: 180px;
     height: 180px;
@@ -72,10 +73,19 @@ p {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+
+
   
     a {
       text-decoration: none;
+      width: 100%;
+      height: 100%;
       transition: 0.5s ease all;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
     h1 {
       font-size: 14px;
       color: ${black};
@@ -150,8 +160,9 @@ p {
 
 
 .box-7 {
-  top: -3%;
-  left: -5%;
+  top: -15%;
+  left: -9%;
+  display: none;
   z-index: -100;
   transition: .5s all ease;
   opacity: ${(props) => (props.menu ? '0;' : '1;')}

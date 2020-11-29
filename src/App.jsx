@@ -5,8 +5,7 @@ import MenuBoxes from './Organism/Molecules/MenuBoxes'
 import FrontpageContent from './Organism/Pages/FrontpageContent'
 import WebGallery from './Organism/Pages/WebGallery'
 import Blog from './Organism/Pages/Blog'
-import BurgerMenu from './Organism/Molecules/BurgerMenu'
-import HomeIcon from './Organism/Atoms/HomeIcon'
+import Navbar from './Organism/Molecules/Navbar'
 import Credit from './Organism/Atoms/Credit'
 import Loading from './Organism/Atoms/Loading'
 import Contact from './Organism/Pages/Contact'
@@ -29,10 +28,7 @@ const App = () => {
         <Router>
           {loading && <Loading />}
           <MenuBoxes />
-          <BurgerMenu />
-
-          {!home && <HomeIcon />}
-
+          <Navbar />
           <Switch>
             <Route path="/" exact>
               <FrontpageContent />

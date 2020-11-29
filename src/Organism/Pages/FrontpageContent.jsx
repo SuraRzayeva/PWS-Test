@@ -29,22 +29,19 @@ const FrontpageContent = (callback) => {
         <meta name="description" content="Frontend Developer and UI/UX Designer" />
         <meta name="theme-color" content="#2B2B2D" />
       </Helmet>
-      <div className="hero-content">
-        <div className="hero">
-          <h1 className="name">Sura Rzayeva</h1>
-          <h3 className="profession">
-            Frontend Developer <br className="mobile-break" />
-            <span>|</span> UI/UX Designer
-          </h3>
-          <div className="buttons">
-            <button onClick={openMenu} className="button portfolio-btn">
-              Portfolio
-            </button>
-            <Link className="contact-link" to="/contact">
-              {' '}
-              <button className="button contact-btn">Contact</button>
-            </Link>
-          </div>
+      <div className="hero">
+        <h1 className="hero-text">Let's create</h1>
+        <h1 className="hero-text">something</h1>
+        <h1 className="hero-text">
+          cool<span>.</span>
+        </h1>
+      </div>
+      <div className="line-block">
+        <div className="start-here">
+          <button onClick={openMenu}>Start here</button>
+        </div>
+        <div className="line">
+          <div className="circle" onClick={openMenu}></div>
         </div>
       </div>
     </StyledFrontpageContent>

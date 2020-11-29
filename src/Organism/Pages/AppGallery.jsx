@@ -48,7 +48,7 @@ const AppGallery = () => {
           </div>
           <div className="image">
             <img src={App3} alt="" className="img-2" onLoad={countTimes} />
-          </div>{' '}
+          </div>
           <div className="image">
             <img src={App2} alt="" className="img-3" onLoad={countTimes} />
           </div>
