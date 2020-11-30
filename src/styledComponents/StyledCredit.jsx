@@ -7,7 +7,7 @@ export const StyledCredit = Styled.div`
 
 position: ${(props) => (props.home ? 'absolute;' : null)};
 bottom: 3%;
-left: 100px;
+left: 150px;
 display: flex;
 align-items: center;
 justify-content: center;

@@ -62,8 +62,8 @@ p {
 
 
   .box {
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
     background-color: ${bgColor};
     background: linear-gradient(to right, ${bgColor}, #f5f9fc);
     box-shadow: 18px 18px 30px ${shadow1}, -18px 18px 30px ${shadow2};
@@ -495,15 +495,6 @@ p {
   }
 }
 
- 
-@media screen and (max-width: 1200px) {
-  .close-btn {
-    width: 30px;
-    height: 30px;
-  }
-
-}
-
 
 @media screen and (max-width: 800px) {
 
@@ -560,11 +551,6 @@ p {
 }
 
 @media screen and (max-width: 420px) {
-
-  .close-btn {
-    width: 25px;
-    height: 25px;
-  }
 
   .boxes {
     .box {

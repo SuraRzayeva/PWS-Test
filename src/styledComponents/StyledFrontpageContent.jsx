@@ -1,5 +1,5 @@
 import Styled from 'styled-components'
-import { black, white, bgColor, detailColor } from './GlobalStyle'
+import { black, white, bgColor, detailColor, detailColor2 } from './GlobalStyle'
 
 export const StyledFrontpageContent = Styled.div`
 
@@ -56,7 +56,7 @@ justify-content: center;
   .line {
     width: 100%;
     height: 5px;
-    background: blue;
+    background: ${detailColor2};
     border-radius: 10px;
     position: relative;
 
@@ -67,7 +67,7 @@ justify-content: center;
       top: 0;
       width: 0;
       height: 0;
-      background: blue;
+      background: ${detailColor};
       border-radius: 50%;
       transition: .2s ease all;
       animation: rotateCircle 3s 1s ease infinite;
@@ -76,13 +76,17 @@ justify-content: center;
 
   }
   :hover .circle {
-      background: yellow;
+      background: ${detailColor};
       width: 100px;
       height: 100px;
       right: -20px;
       top: -55px;
       cursor: pointer;
     }
+
+    /* :hover button {
+      color: ${detailColor2};
+    } */
 }
 
 @keyframes rotateLine {
@@ -99,6 +103,55 @@ justify-content: center;
   }   to {
     transform: rotateY(360deg);
   }
+}
+
+@media screen and (max-width: 800px) {
+  padding: 0 50px;
+  .hero {
+  .hero-text {
+    font-size: 110px;
+    line-height: 110px;
+  }
+}
+}
+
+@media screen and (max-width: 450px) {
+  padding: 0 10px;
+  .hero {
+  .hero-text {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+.line-block {
+  width: 80%;
+}
+}
+
+@media screen and (max-width: 400px) {
+  padding: 0 20px;
+  .hero {
+  .hero-text {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+.line-block {
+  width: 80%;
+}
+}
+
+@media screen and (max-width: 300px) {
+  padding: 0 10px;
+  .hero {
+  .hero-text {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+.line-block {
+  width: 75%;
+}
 }
 
 

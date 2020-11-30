@@ -1,5 +1,5 @@
 import Styled from 'styled-components'
-import { black, detailColor } from './GlobalStyle'
+import { black, detailColor, detailColor2, white } from './GlobalStyle'
 
 export const StyledNavbar = Styled.div`
 *:active, *:focus {
@@ -9,12 +9,12 @@ export const StyledNavbar = Styled.div`
 z-index: 100;
 position: absolute;
 width: 100%;
-height: 10%;
+height: 100px;
 top: 0;
-left: 50%;
-transform: translateX(-50%);
+left: 0;
 display: flex;
-transition: 0.5s ease all;
+transition: 0.3s ease all;
+
 
 
 .logo {
@@ -22,6 +22,9 @@ transition: 0.5s ease all;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding-bottom: 10px;
+  padding-left: 150px;
+
 
   a {
     text-decoration: none;
@@ -33,14 +36,13 @@ transition: 0.5s ease all;
     line-height: 0;
     padding: 0;
     margin: 0;
-    margin-left: 100px;
+
     color: ${black};
   }
 
   .description {
     text-transform: uppercase;
     font-weight: 400;
-    margin-left: 100px;
     font-size: 12px;
     color: ${black};
   }
@@ -50,17 +52,18 @@ transition: 0.5s ease all;
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding-right: 150px;
 
   .burger {
     width: 30px;
     height: 30px;
     margin-left: auto;
-    margin-right: 80px;
     margin-top: auto;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding-bottom: 10px;
     cursor: pointer;
 
     .line {
@@ -73,11 +76,35 @@ transition: 0.5s ease all;
     .line2 {
       width: 50%;
     }
+
+    :focus, :active {
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
+
+
+  }
+
+
 }
 
-@media screen and (min-width: 1500px) {
-max-width: 1500px;
+
+
+:hover {
+  background: ${(props) => (props.top > 100 ? black : 'transparent')};
+}
+
+:hover .logo .title, :hover .logo .description {
+  color: ${(props) => (props.top > 100 ? white : black)};
+}
+
+:hover .burger-menu .burger .line {
+  background: ${(props) => (props.top > 100 ? white : black)};
+}
+
+
+@media screen and (min-width: 1800px) {
+max-width: 1800px;
 .logo {
   .title, .description {
     margin-left: 0;
@@ -93,6 +120,16 @@ max-width: 1500px;
 
 @media screen and (min-width: 800px) {
   position: fixed;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    padding-left: 50px;
+  }
+
+  .burger-menu {
+    padding-right: 50px;
+  }
 }
 
 

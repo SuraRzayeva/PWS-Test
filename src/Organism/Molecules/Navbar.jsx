@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { StyledNavbar } from '../../styledComponents/StyledNavbar'
 import Context from '../../context/Context'
@@ -8,6 +8,11 @@ import dots from '../../img/icons/dots-menu.png'
 const BurgerMenu = () => {
   const { menu, home } = useContext(Context)
   const { setMenu, setHome } = useContext(DispatchContext)
+  const [top, setTop] = useState(0)
+
+  window.addEventListener('scroll', () => {
+    setTop(document.documentElement.scrollTop)
+  })
 
   const openMenu = () => {
     if (menu) {
@@ -19,7 +24,7 @@ const BurgerMenu = () => {
   }
 
   return (
-    <StyledNavbar>
+    <StyledNavbar top={top}>
       <div className="logo">
         <Link to="/">
           <h3 className="title">Sura Rzayeva</h3>

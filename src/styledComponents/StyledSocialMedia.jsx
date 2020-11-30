@@ -4,7 +4,7 @@ export const StyledSocialMedia = Styled.div`
 
 position: absolute;
 bottom: 3%;
-right: 5%;
+right: 150px;
 display: flex;
 transition: 0.5s ease all;
 align-items: flex-end;
@@ -15,18 +15,26 @@ img {
   padding: 10px;
   transition: .3s ease all;
   cursor: pointer;
-}
-
-img:hover {
-  transform: scale(1.07);
-  backface-visibility: hidden;
+  position: relative;
 }
 
 a:focus, a:active {
   outline: none;
-  background: ${detailColor};
 }
 
+a:after {
+  content: '';
+  height: 3px;
+  width: 0;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background: red;
+}
+
+a:hover:after {
+  width: 100%;
+}
 
 @media screen and (max-width: 1024px) {
   left: 50%;

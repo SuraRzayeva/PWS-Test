@@ -3,7 +3,7 @@ import { GlobalStyle } from './styledComponents/GlobalStyle'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import MenuBoxes from './Organism/Molecules/MenuBoxes'
 import FrontpageContent from './Organism/Pages/FrontpageContent'
-import WebGallery from './Organism/Pages/WebGallery'
+import UIUXGallery from './Organism/Pages/UIUXGallery/UIUXGallery'
 import Blog from './Organism/Pages/Blog'
 import Navbar from './Organism/Molecules/Navbar'
 import Credit from './Organism/Atoms/Credit'
@@ -34,7 +34,7 @@ const App = () => {
               <FrontpageContent />
             </Route>
             <Route path="/web" exact>
-              <WebGallery />
+              <UIUXGallery />
             </Route>
             <Route path="/app" exact>
               <AppGallery />

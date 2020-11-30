@@ -26,7 +26,7 @@ const MenuBoxes = () => {
           {menu ? (
             <Link onClick={closeMenu} to="/web">
               <div className="wrapper">
-                <h1> UI/UX WEB </h1>
+                <h1> UI/UX Gallery </h1>
               </div>
             </Link>
           ) : null}
@@ -35,7 +35,7 @@ const MenuBoxes = () => {
         <div className="box box-2">
           {menu ? (
             <Link onClick={closeMenu} to="app">
-              <h1> UI/UX APP </h1>
+              <h1> Graphic Design </h1>
             </Link>
           ) : null}
         </div>
@@ -43,7 +43,7 @@ const MenuBoxes = () => {
         <div className="box box-3">
           {menu ? (
             <Link onClick={closeMenu} to="/projects">
-              <h1> PROJECTS </h1>
+              <h1> Projects </h1>
             </Link>
           ) : null}
         </div>
@@ -51,7 +51,7 @@ const MenuBoxes = () => {
         <div className="box box-4">
           {menu ? (
             <Link onClick={closeMenu} to="/illustrations">
-              <h1> ILLUSTRATIONS </h1>
+              <h1> Blog </h1>
             </Link>
           ) : null}
         </div>
@@ -59,14 +59,14 @@ const MenuBoxes = () => {
         <div className="box box-5">
           {menu ? (
             <Link onClick={closeMenu} to="/blog">
-              <h1> BLOG </h1>
+              <h1> About Me </h1>
             </Link>
           ) : null}
         </div>
         <div className="box box-6">
           {menu ? (
             <Link onClick={closeMenu} to="/contact">
-              <h1> ABOUT / CONTACT </h1>
+              <h1> Contact </h1>
             </Link>
           ) : null}
         </div>
